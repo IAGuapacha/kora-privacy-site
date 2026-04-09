@@ -151,7 +151,8 @@ a {
 }
 
 .hero-grid,
-.data-grid {
+.data-grid,
+.account-deletion-grid {
   display: grid;
   gap: 1rem;
 }
@@ -239,6 +240,15 @@ a {
   margin-top: 1rem;
 }
 
+.account-deletion-section {
+  scroll-margin-top: 1.5rem;
+}
+
+.account-deletion-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
 html[lang="es"] [data-lang="en"] {
   display: none;
 }
@@ -278,7 +288,8 @@ html[lang="en"] [data-lang="es"] {
   }
 
   .hero-grid,
-  .data-grid {
+  .data-grid,
+  .account-deletion-grid {
     grid-template-columns: 1fr;
   }
 
